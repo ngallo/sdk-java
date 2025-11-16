@@ -103,7 +103,7 @@ public class Check {
 
             Entities entities = new Entities("cedar", List.of(
                     Map.of(
-                            "uid", Map.of("type", "MagicFarmacia::Platform::BranchInfo", "id", "subscription"),
+                            "uid", Map.of("type", "ZTMedFlow::Platform::BranchInfo", "id", "subscription"),
                             "attrs", Map.of("active", true),
                             "parents", List.of()
                     )
@@ -114,8 +114,8 @@ public class Check {
                     zoneId,
                     policyStoreId,
                     "platform-creator",  // Subject id from JSON
-                    "MagicFarmacia::Platform::Subscription",  // Resource type from JSON
-                    "MagicFarmacia::Platform::Action::create"  // Action name from JSON
+                    "ZTMedFlow::Platform::Subscription",  // Resource type from JSON
+                    "ZTMedFlow::Platform::Action::create"  // Action name from JSON
             )
                     .withRequestId(requestId)
                     .withPrincipal(principal)
@@ -151,7 +151,7 @@ public class Check {
             String subjectId = "platform-creator";
             String subjectType = "workload";
             String resourceId = "e3a786fd07e24bfa95ba4341d3695ae8";
-            String resourceType = "MagicFarmacia::Platform::Subscription";
+            String resourceType = "ZTMedFlow::Platform::Subscription";
 
             // Create Principal
             Principal principal = new PrincipalBuilder(subjectId)
@@ -173,11 +173,11 @@ public class Check {
                     .build();
 
             // Create Actions
-            Action actionView = new ActionBuilder("MagicFarmacia::Platform::Action::view")
+            Action actionView = new ActionBuilder("ZTMedFlow::Platform::Action::view")
                     .withProperty("isEnabled", true)
                     .build();
 
-            Action actionCreate = new ActionBuilder("MagicFarmacia::Platform::Action::create")
+            Action actionCreate = new ActionBuilder("ZTMedFlow::Platform::Action::create")
                     .withProperty("isEnabled", true)
                     .build();
 
@@ -201,7 +201,7 @@ public class Check {
             // Create Entities
             Entities entities = new Entities("cedar", List.of(
                     Map.of(
-                            "uid", Map.of("type", "MagicFarmacia::Platform::BranchInfo", "id", "subscription"),
+                            "uid", Map.of("type", "ZTMedFlow::Platform::BranchInfo", "id", "subscription"),
                             "attrs", Map.of("active", true),
                             "parents", List.of()
                     )
