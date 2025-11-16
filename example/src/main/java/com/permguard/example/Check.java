@@ -149,7 +149,7 @@ public class Check {
             String policyStoreId = POLICY_STORE_ID;
             String requestId = "batch-eval-001";
             String subjectId = "platform-creator";
-            String subjectType = "role-actor";
+            String subjectType = "workload";
             String resourceId = "e3a786fd07e24bfa95ba4341d3695ae8";
             String resourceType = "MagicFarmacia::Platform::Subscription";
 

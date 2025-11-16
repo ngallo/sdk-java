@@ -52,7 +52,7 @@ public class AZAtomicRequestBuilder {
     public AZAtomicRequestBuilder(long zoneId, String policyStoreId, String id, String resourceType, String actionName) {
         this.requestBuilder = new AZRequestBuilder(zoneId, policyStoreId);
         this.subjectId = id; // ✅ Store the original subject ID
-        this.subjectType = "role-actor"; // ✅ Default to role-actor (can be modified)
+        this.subjectType = "workload"; // ✅ Default to workload (can be modified)
         this.resourceType = resourceType; // ✅ Store the resource type
         this.actionName = actionName; // ✅ Store the action name
 
