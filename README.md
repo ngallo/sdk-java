@@ -74,7 +74,7 @@ public static void main(String[] args) {
 
             Entities entities = new Entities("cedar", List.of(
                     Map.of(
-                            "uid", Map.of("type", "ZTMedFlow::Platform::BranchInfo", "id", "subscription"),
+                            "uid", Map.of("type", "PharmaAuthZFlow::Platform::BranchInfo", "id", "subscription"),
                             "attrs", Map.of("active", true),
                             "parents", List.of()
                     )
@@ -85,8 +85,8 @@ public static void main(String[] args) {
                     zoneId,
                     policyStoreId,
                     "platform-creator",  // Subject id from JSON
-                    "ZTMedFlow::Platform::Subscription",  // Resource type from JSON
-                    "ZTMedFlow::Platform::Action::create"  // Action name from JSON
+                    "PharmaAuthZFlow::Platform::Subscription",  // Resource type from JSON
+                    "PharmaAuthZFlow::Platform::Action::create"  // Action name from JSON
             )
                     .withRequestId(requestId)
                     .withPrincipal(principal)
