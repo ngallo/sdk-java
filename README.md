@@ -129,7 +129,7 @@ The SDK uses the `AZConfig` class to hold connection parameters for your Permgua
 - **port**: The port number.
 - **usePlaintext**: Use plaintext if TLS is not required; otherwise, configure TLS as needed.
 
-**Permguard** rethinks Authorization Beyond the Token. From Static Claims to Runtime Trust: Secure, Auditable Decisions for Humans and Workloads. Boost SIEM & SOC with Decision Insights.
+**Permguard** is the authorization engine for both worlds: enforce policies on today's systems, enforce continuity on tomorrow's. One engine for governance, AI agents, and distributed execution.
 This repository implements the Permguard Java SDK (Authorization Check).
 
 ---
