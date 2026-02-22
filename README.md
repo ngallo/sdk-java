@@ -10,8 +10,6 @@
 
 [Watch the video on YouTube](https://youtu.be/cH_boKCpLQ8?si=i1fWFHT5kxQQJoYN)
 
-
-
 The Permguard Java SDK provides a simple and flexible client to perform authorization checks against a Permguard Policy Decision Point (PDP) service using gRPC. This README explains how to install the SDK, configure the client, and integrate it into your Java application.
 
 ---
@@ -128,6 +126,8 @@ The SDK uses the `AZConfig` class to hold connection parameters for your Permgua
 - **host**: The hostname or IP address of your PDP service.
 - **port**: The port number.
 - **usePlaintext**: Use plaintext if TLS is not required; otherwise, configure TLS as needed.
+
+> **Govern Authority. From Policies to Continuity.**
 
 **Permguard** is the authorization engine for both worlds: enforce policies on today's systems, enforce continuity on tomorrow's. One engine for governance, AI agents, and distributed execution.
 This repository implements the Permguard Java SDK (Authorization Check).
